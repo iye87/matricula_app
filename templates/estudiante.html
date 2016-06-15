@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <div align="" class="buttons">
+      <button class="button button-clear icon-left ion-close-circled" ng-click="closeLogin()">Cerrar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="card">
+      <div align="center" class="item item-divider">
+        Datos del Estudiante
+      </div>
+      <div class="item item-text-wrap">
+        Nombre y Apellidos: {{nombre +" "+ apellidos}}
+      </div>
+      <div class="item item-text-wrap">
+        Ci: {{ci}}
+      </div>
+      <div class="item item-text-wrap">
+       Escuela: {{escuela}}
+      </div>
+      <div class="item item-text-wrap">
+       Grado: {{grado}}
+      </div>
+      <div class="item item-text-wrap">
+       Teléfono: {{telefono}}
+      </div>
+      <div class="item item-text-wrap">
+       Nombre del Padre: {{nombre_padre}}
+      </div>
+      <div class="item item-text-wrap">
+       teléfono del Padre: {{telf_padre}}
+      </div>
+      <div class="item item-text-wrap">
+       Nombre de la Madre: {{nombre_madre}}
+      </div>
+
+      <div class="item item-text-wrap">
+       teléfono de la Madre: {{telf_madre}}
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,50 @@
+<ion-view view-title="Matricular Estudiante">
+  <ion-content>
+    <div class="list">
+	  <label class="item item-input">
+	    <input type="text" placeholder="Nombre" ng-model="nombre"  required>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Apellidos" ng-model="apellido"  required>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Ci" ng-model="ci"  required>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Teléfono" ng-model="telefono"  required>
+	  </label>
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+	      Grado
+	    </div>
+	    <select ng-model="grado"  required>
+	      <option>7mo</option>
+	      <option>8vo</option>
+	      <option>9no</option>
+	      <option selected>10mo</option>
+	      <option>11no</option>
+	      <option>12mo</option>
+	    </select>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Escuela" ng-model="escuela"  required>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Nombre del Padre" ng-model="nombre_padre"  required>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Teléfono del Padre" ng-model="telf_padre">
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Nombre de la Madre" ng-model="nombre_madre"  required>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Teléfono de la Madre" ng-model="telef_madre">
+	  </label>
+	</div>
+	<label class="item">
+      <button class="button button-block button-positive" ng-click="insertar(nombre,apellido,ci,telefono,grado,escuela,nombre_padre,telf_padre,nombre_madre,telef_madre)">Guardar</button>
+    </label>
+  </ion-content>
+</ion-view>
+
